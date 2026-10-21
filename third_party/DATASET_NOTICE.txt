@@ -1,0 +1,8 @@
+KolektorSDD2: images provided and annotated by Kolektor Group; dataset distributed by ViCoS Lab.
+Authors: Jakob Bozic, Domen Tabernik, Danijel Skocaj.
+Source: https://www.vicos.si/resources/kolektorsdd2/
+Licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+This trial preserves original sample image and mask bytes.
+Citation: Mixed supervision for surface-defect detection: from weakly to fully supervised learning, Computers in Industry, 2021.
+https://prints.vicos.si/publications/385
