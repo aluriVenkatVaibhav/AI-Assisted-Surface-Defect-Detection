@@ -1,0 +1,10 @@
+/build/
+/.deps/
+/data/
+/__pycache__/
+*.part
+*.tmp
+*.log
+/share/
+
+/bin/

@@ -1,0 +1,2041 @@
+{
+  "project": "AI-Assisted Surface Defect Detection and Interactive Visualization",
+  "target": "Windows x64, OpenGL 3.3",
+  "created_utc": "2026-10-13T10:17:40.795663+00:00",
+  "dll_count": 144,
+  "demo_sample_pairs": 29,
+  "full_dataset_included": false,
+  "system_dlls_not_bundled": [
+    "ADVAPI32.dll",
+    "AVICAP32.dll",
+    "AVRT.dll",
+    "CFGMGR32.dll",
+    "CRYPT32.dll",
+    "DNSAPI.dll",
+    "DWrite.dll",
+    "GDI32.dll",
+    "IPHLPAPI.DLL",
+    "KERNEL32.dll",
+    "MSIMG32.dll",
+    "OLEAUT32.dll",
+    "OPENGL32.dll",
+    "RPCRT4.dll",
+    "SHELL32.dll",
+    "SHLWAPI.dll",
+    "USER32.dll",
+    "USERENV.dll",
+    "USP10.dll",
+    "VERSION.dll",
+    "WINMM.dll",
+    "WS2_32.dll",
+    "WSOCK32.dll",
+    "api-ms-win-core-synch-l1-2-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "bcrypt.dll",
+    "bcryptprimitives.dll",
+    "comdlg32.dll",
+    "gdiplus.dll",
+    "kernel32.dll",
+    "msvcrt.dll",
+    "ncrypt.dll",
+    "ntdll.dll",
+    "ole32.dll"
+  ],
+  "files": [
+    {
+      "path": ".clang-format",
+      "bytes": 190,
+      "sha256": "ce32b798bad5060dd1fe69ec16cfa191c6ebe10bcd802ad1a29970ebc8d26bfe"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 64,
+      "sha256": "44b8a57cafb298817ddb7ecb33819706055e9c75d42e5bf37c3267e572253e79"
+    },
+    {
+      "path": "bin/avcodec-63.dll",
+      "bytes": 20628786,
+      "sha256": "2d3c6adf1e9b7ec7a753b0a2f8990a65129d5f4b75068974721f0c2de9c4113e"
+    },
+    {
+      "path": "bin/avdevice-63.dll",
+      "bytes": 174505,
+      "sha256": "7273c04277259604ae70687687ecbefdd782b78cb6d66d4af9d50ac70802a7ba"
+    },
+    {
+      "path": "bin/avfilter-12.dll",
+      "bytes": 6817032,
+      "sha256": "885f0d54133ad10bc5a06d3a21753c17aaad70fa39c670afdfa0c766e5741859"
+    },
+    {
+      "path": "bin/avformat-63.dll",
+      "bytes": 2992967,
+      "sha256": "21f96bb6f21367790ea702f7666da8f9b30e0d1442dab75ac0ae13e6592c9c8f"
+    },
+    {
+      "path": "bin/avutil-61.dll",
+      "bytes": 1303596,
+      "sha256": "d1184f8e399dc52bd60735d2af20c37d58555512f4152f8d10789d8e325024df"
+    },
+    {
+      "path": "bin/core_tests.exe",
+      "bytes": 154080,
+      "sha256": "b4dd079ede348958e73398c9ba7be8523d52d6d4e96487ef7a677a1b0e369c25"
+    },
+    {
+      "path": "bin/ggml-0.dll",
+      "bytes": 55198,
+      "sha256": "c50a25f0d9a31b7124b7ce51727e5eee8c570b84f524f9674b84ec86325fa8ae"
+    },
+    {
+      "path": "bin/ggml-base-0.dll",
+      "bytes": 917291,
+      "sha256": "bd7fb65af07f3a4d6bdb3806a596db1c715b12a0fac3bc049f7402f147a80a8a"
+    },
+    {
+      "path": "bin/glew32.dll",
+      "bytes": 483640,
+      "sha256": "be7b52e1777e36c3da4b8d0acfc519ba2ac547f749d25d63a7c8fc2bab0cde22"
+    },
+    {
+      "path": "bin/glfw3.dll",
+      "bytes": 333500,
+      "sha256": "9a305ea5228fde34a3bd3a521618155daab1e0eab63c444cfbecf7c4299305bf"
+    },
+    {
+      "path": "bin/inspect.exe",
+      "bytes": 1721461,
+      "sha256": "f6f172e9417b43c1a1ff85832faeb98827aafeba035ff39cf06e2a7e4b954a69"
+    },
+    {
+      "path": "bin/libaom.dll",
+      "bytes": 9690003,
+      "sha256": "65e706fe40f12af1f4f81f741266ba7f5611addbcdaa8dc1e0489f5575f41be2"
+    },
+    {
+      "path": "bin/libass-9.dll",
+      "bytes": 351277,
+      "sha256": "d7e21a7fa952033ff5bbacd2564b343671bf0ad4ae9338613935f2709861b9d2"
+    },
+    {
+      "path": "bin/libavif-16.dll",
+      "bytes": 335578,
+      "sha256": "47afa7f14e332e220325c8d6fc837064fbc0fdcbfc3901dfc340fbb93102300e"
+    },
+    {
+      "path": "bin/libbluray-4.dll",
+      "bytes": 374967,
+      "sha256": "b7d67f3dddd4cf78ef6579fd660384ca80f9f737c6fb5ac6c9e3cdf3464cfc07"
+    },
+    {
+      "path": "bin/libbrotlicommon.dll",
+      "bytes": 143429,
+      "sha256": "ca7bc06ead80259971badf2cd0bfc688db9154dad65f139f49a38b4be9976f97"
+    },
+    {
+      "path": "bin/libbrotlidec.dll",
+      "bytes": 62461,
+      "sha256": "a142dc6cfa77cb907028aa9426f486f3d8de37855e8db2ae2894147908121881"
+    },
+    {
+      "path": "bin/libbrotlienc.dll",
+      "bytes": 788364,
+      "sha256": "50c3aca8abcf0d5576f0b62dbd608be285246f8fd1b48ef87d58fa6b8b744e5f"
+    },
+    {
+      "path": "bin/libbz2-1.dll",
+      "bytes": 108633,
+      "sha256": "a4fbb97c26662d2b8a80bf4597ed3effb69b12048b0cb1eef2c3f211e2e66673"
+    },
+    {
+      "path": "bin/libcaca-0.dll",
+      "bytes": 862030,
+      "sha256": "54730393b26010bdb0797fe41bec38b8092400b4bbda0e35530fe8af320d8c3d"
+    },
+    {
+      "path": "bin/libcairo-2.dll",
+      "bytes": 1250226,
+      "sha256": "aa794d8f62e122d7739523643e293d26e05f2c1c723035079ba01dcaeda0dad6"
+    },
+    {
+      "path": "bin/libcairo-gobject-2.dll",
+      "bytes": 31735,
+      "sha256": "2fbc11e9949328df850a5803162a8d812133208a3ad091630e6cb339b081cddb"
+    },
+    {
+      "path": "bin/libcrypto-3-x64.dll",
+      "bytes": 5495630,
+      "sha256": "ad397e1391ae38100fa1043d69a3495efa73fd9c2784de0ffc3ede3df1fd092e"
+    },
+    {
+      "path": "bin/libdatrie-1.dll",
+      "bytes": 35033,
+      "sha256": "2f784872e6404e57847201fe1e7e591bd5b5be4a319ef38ebcb36014ac7f385d"
+    },
+    {
+      "path": "bin/libdav1d-7.dll",
+      "bytes": 1931258,
+      "sha256": "29385f5f9b9f8c945eac3366403f529b3bd4bd59aa6eb492e043ffd2d82268c0"
+    },
+    {
+      "path": "bin/libdeflate.dll",
+      "bytes": 95902,
+      "sha256": "4be2ffe36137f533825a853642051f2c1f6ddd2f6515e33c2c32712bc9a6d214"
+    },
+    {
+      "path": "bin/libdovi.dll",
+      "bytes": 1370085,
+      "sha256": "d0ebc0d98ac67dc28b176f77af125f2066dcb6cf6283f71c102d67f0eeb1df7c"
+    },
+    {
+      "path": "bin/libexpat-1.dll",
+      "bytes": 237501,
+      "sha256": "fe72e241d004d8704208abe02cb2c8340d442c06f5c27dd2627a075beb1885e0"
+    },
+    {
+      "path": "bin/libffi-8.dll",
+      "bytes": 39699,
+      "sha256": "b649c515907436a3299326f83aea0e8d75c61853eb1609602603bbcb9b00b4db"
+    },
+    {
+      "path": "bin/libfontconfig-1.dll",
+      "bytes": 508462,
+      "sha256": "bed1827dbb226483026b2b33127866ce173aa2423d89ae7da6f88d6328792ec9"
+    },
+    {
+      "path": "bin/libfreetype-6.dll",
+      "bytes": 790651,
+      "sha256": "bbb3e6390ee229c867ef31f10e42a49a61a92e434a11d40c6139a2608ebc6194"
+    },
+    {
+      "path": "bin/libfribidi-0.dll",
+      "bytes": 154276,
+      "sha256": "ae9e30c61e1c62886d36e23a91d2943970ae990f85155cbd222b9ba44de9c51b"
+    },
+    {
+      "path": "bin/libgcc_s_seh-1.dll",
+      "bytes": 150998,
+      "sha256": "b37c1770c8ca092700875845b34918803ee6311573eba1c32ff4b1166e4a0e1e"
+    },
+    {
+      "path": "bin/libgdk_pixbuf-2.0-0.dll",
+      "bytes": 358598,
+      "sha256": "e4615a88eff40cfe51a4b181e6c917462a9ecc52285e00a3e7a07ae922c2f6f5"
+    },
+    {
+      "path": "bin/libgio-2.0-0.dll",
+      "bytes": 1918835,
+      "sha256": "eef35a18138b7afefaf5ade36b07b3b3ec25d21080a1c2c5eccefad383482016"
+    },
+    {
+      "path": "bin/libglib-2.0-0.dll",
+      "bytes": 1570710,
+      "sha256": "84b15dc907fd1d3bb1cd799fc034d2edcbc3946c8c4acd6a8dd3ace381f9e568"
+    },
+    {
+      "path": "bin/libgme.dll",
+      "bytes": 376413,
+      "sha256": "fcf63dc0a1dc22c885b8cd858b5f1e62a8d916ca6a8c7b9fd867ea46583925b1"
+    },
+    {
+      "path": "bin/libgmodule-2.0-0.dll",
+      "bytes": 23387,
+      "sha256": "79a7646945b520966dcd2541d40c109f26c42979b47bed9aabec796a8cbe20d0"
+    },
+    {
+      "path": "bin/libgmp-10.dll",
+      "bytes": 679747,
+      "sha256": "37248cda33845e7c5c35a574e57da762dd0a8268f0270d179f30a33746809681"
+    },
+    {
+      "path": "bin/libgnutls-30.dll",
+      "bytes": 2316158,
+      "sha256": "aca67ef2c8429557e9ac3a02ad313e9fdad35a1416972a248f0a205f83d39fbd"
+    },
+    {
+      "path": "bin/libgobject-2.0-0.dll",
+      "bytes": 357682,
+      "sha256": "a417864358cbe7a1da74b7cfcc61f7d49b03772b02f29fa611b01a67d5b99632"
+    },
+    {
+      "path": "bin/libgomp-1.dll",
+      "bytes": 329299,
+      "sha256": "acf25eeee8cb358db82e3f42c96d1934b915d62b883ea8bef31d766946f1c326"
+    },
+    {
+      "path": "bin/libgraphite2.dll",
+      "bytes": 167155,
+      "sha256": "063a9ad34a5ec87d038b4646660957395224ecf2cf707917256b7d251a7c5f57"
+    },
+    {
+      "path": "bin/libgsm.dll",
+      "bytes": 56554,
+      "sha256": "687f6fd4d7aaa7a725e856000e5e9f3bfb77fcaa554713db432cf6c4f433a3a1"
+    },
+    {
+      "path": "bin/libgstapp-1.0-0.dll",
+      "bytes": 99049,
+      "sha256": "4395a7c3f272669cabab872bb87a0cc454b08da61e024b0e3dd16fdf48a0588e"
+    },
+    {
+      "path": "bin/libgstaudio-1.0-0.dll",
+      "bytes": 606570,
+      "sha256": "4473b396c84c10e84a8bac45972928d5506461e781282cd7fe20459ab91f29dd"
+    },
+    {
+      "path": "bin/libgstbase-1.0-0.dll",
+      "bytes": 545631,
+      "sha256": "c3013a534a58b0bf10307fa1863b1e43ff5ca0fb8570012a6e20ef904cecfba7"
+    },
+    {
+      "path": "bin/libgstpbutils-1.0-0.dll",
+      "bytes": 320789,
+      "sha256": "a0cb39042f5e190a46a6b06d3a1176808a505fbd812b181e00664188f042f677"
+    },
+    {
+      "path": "bin/libgstreamer-1.0-0.dll",
+      "bytes": 1480835,
+      "sha256": "ac22afc48af138d1f19d2a9b3bcde404b873971d04c1c39a59a6129804c53eb3"
+    },
+    {
+      "path": "bin/libgstriff-1.0-0.dll",
+      "bytes": 67020,
+      "sha256": "8f3c4cd21c68aa942001105584a919f1a540120bb38ead786e47d66a5bcd05fb"
+    },
+    {
+      "path": "bin/libgsttag-1.0-0.dll",
+      "bytes": 316143,
+      "sha256": "870d8ba75a4bd7c3399eb35d238e59b2119dbae890a89407b532705cd5c8129a"
+    },
+    {
+      "path": "bin/libgstvideo-1.0-0.dll",
+      "bytes": 928340,
+      "sha256": "22b2e3681ad27e47a94cffece54733fbd5ab90ff02cac9c287a9a5512e2eb7f1"
+    },
+    {
+      "path": "bin/libharfbuzz-0.dll",
+      "bytes": 1613362,
+      "sha256": "cfbe14d84474dae2b379a746a5325dcc10b7ebfa077bf5a8e9ec0d761f673b22"
+    },
+    {
+      "path": "bin/libhogweed-7.dll",
+      "bytes": 275389,
+      "sha256": "8a4785b98e5418c32035f570904f65360c89825358702954b53c77ee2df8c97d"
+    },
+    {
+      "path": "bin/libhwy.dll",
+      "bytes": 88615,
+      "sha256": "4cd65f4bb3c123471a23f3eed734adbb31522b012c2c1776640d9634fbeb623c"
+    },
+    {
+      "path": "bin/libiconv-2.dll",
+      "bytes": 1143148,
+      "sha256": "7a282a854e01be726c6cccfe46f548c716aa45b3014818468253aaa4efbcd067"
+    },
+    {
+      "path": "bin/libidn2-0.dll",
+      "bytes": 247081,
+      "sha256": "9880b52651a0247640a2531d777380f7c35fac7efa7e3979b265ddcb78db8642"
+    },
+    {
+      "path": "bin/libIex-3_4.dll",
+      "bytes": 364023,
+      "sha256": "5fc661f8a426a3a1cfd4f8abe48b4fe21dd92505d6cf1f944f559cb98fc9e3dd"
+    },
+    {
+      "path": "bin/libIlmThread-3_4.dll",
+      "bytes": 37316,
+      "sha256": "fd7a706895e651289f8ef1cdc91736735f31a163c38260b83e501c0f6809d9b4"
+    },
+    {
+      "path": "bin/libImath-3_2.dll",
+      "bytes": 344446,
+      "sha256": "b658b80f828f5d00701bc5c6f3e800310ae20582df8760f713f5114ade3b3148"
+    },
+    {
+      "path": "bin/libintl-8.dll",
+      "bytes": 298731,
+      "sha256": "0537c3dd2378218508ebe3cc416d72a99ee2d24ae1c5525e23458f32544ef861"
+    },
+    {
+      "path": "bin/libjbig-0.dll",
+      "bytes": 60973,
+      "sha256": "9286b1f637ff4a249d81238ea9c9ebf4fb083727dfc4235c750bf749606d85f0"
+    },
+    {
+      "path": "bin/libjpeg-8.dll",
+      "bytes": 967968,
+      "sha256": "b564d34adaca83e73af0e2231719dd0198ea6cd074c64b2ba85bfd7182f27db7"
+    },
+    {
+      "path": "bin/libjxl.dll",
+      "bytes": 6218625,
+      "sha256": "d8d1ba0ba4c12ae74a15d44e06a798eafe18842dde71130653dd982dab5fe2a1"
+    },
+    {
+      "path": "bin/libjxl_cms.dll",
+      "bytes": 147921,
+      "sha256": "6d822a9ac8288fda334b460cbe008716c7b6e9b20e160b9b6ca23871506f0a00"
+    },
+    {
+      "path": "bin/libjxl_threads.dll",
+      "bytes": 25750,
+      "sha256": "5a70b49f81063b865225871a3ae0c70566a7c8357058b6c243855c23b143e076"
+    },
+    {
+      "path": "bin/liblc3-1.dll",
+      "bytes": 165244,
+      "sha256": "ead8e36dd9b502baccfd4814eb84e3047a597fb2b96231592367f1fac7587904"
+    },
+    {
+      "path": "bin/liblcms2-2.dll",
+      "bytes": 456345,
+      "sha256": "dc241cbdf2d295846ec564c1eb3c01639d43c0d72415a8758e65d71df31cc0ba"
+    },
+    {
+      "path": "bin/libLerc.dll",
+      "bytes": 804265,
+      "sha256": "6887fb5aeabf382a835a4cb693025e8d48d9c90e82ca4eae5d2d8ffb70c6ca9a"
+    },
+    {
+      "path": "bin/liblzma-5.dll",
+      "bytes": 191836,
+      "sha256": "dc9edb9bd83b0371fe68d96cb3e70cd17b7a5aba958326a18f8210cb812432e9"
+    },
+    {
+      "path": "bin/libmodplug-1.dll",
+      "bytes": 80559,
+      "sha256": "e38f0139642491e88711f59841511d11c3080b62d9ddbe56312291c8e26953bc"
+    },
+    {
+      "path": "bin/libmp3lame-0.dll",
+      "bytes": 329506,
+      "sha256": "f40c566b56a97e32036f3d5263fd7dc2dafa6fc7ded326045dd637dd55d68c24"
+    },
+    {
+      "path": "bin/libmpg123-0.dll",
+      "bytes": 453200,
+      "sha256": "5d9ccd4c86b75a984044ebe1d4c95afd1e771b74e89c1467bf76a520c37a5299"
+    },
+    {
+      "path": "bin/libnettle-9.dll",
+      "bytes": 360977,
+      "sha256": "208002d990684946c7923a87022bedea588fef8e31286598c08805e37be2a95a"
+    },
+    {
+      "path": "bin/libogg-0.dll",
+      "bytes": 40580,
+      "sha256": "3038ce8d161324a6349bf7c83b78493857ff6a3501e3adb3d541c6a07bd94a57"
+    },
+    {
+      "path": "bin/libopenal-1.dll",
+      "bytes": 2728444,
+      "sha256": "cb97d2f5a9797ff64db90d0691e4ff9eb2a088026351c9bad7aa26d229a354ce"
+    },
+    {
+      "path": "bin/libopencore-amrnb-0.dll",
+      "bytes": 174211,
+      "sha256": "8f9b1fd5fec2042a3b6af15eae54474210569c75bcc482fe702b45dcb3e96397"
+    },
+    {
+      "path": "bin/libopencore-amrwb-0.dll",
+      "bytes": 91267,
+      "sha256": "7482267efad926b69c8304ec631fd531a2fc5d99b481b59cb5b34d8540a38dc2"
+    },
+    {
+      "path": "bin/libopencv_core-500.dll",
+      "bytes": 7080715,
+      "sha256": "0b7ff0a12d70b6452647b3507abdab917ebeec5f901a7be4dc67b27453119ed7"
+    },
+    {
+      "path": "bin/libopencv_flann-500.dll",
+      "bytes": 632295,
+      "sha256": "4ee74cb1e6963cfe5c0d5d063f2436d851d6bf81545fcb2093cde00155df7ac9"
+    },
+    {
+      "path": "bin/libopencv_geometry-500.dll",
+      "bytes": 2273106,
+      "sha256": "12dd9302382a8f4bebc633dc05e6e65171a41553b9ac5a916928d3c6df4ea8ef"
+    },
+    {
+      "path": "bin/libopencv_imgcodecs-500.dll",
+      "bytes": 870615,
+      "sha256": "8c3e85c79657251f8784f854b06f4c57115e48eaec0ba60d393276b9622b5848"
+    },
+    {
+      "path": "bin/libopencv_imgproc-500.dll",
+      "bytes": 12570201,
+      "sha256": "e289cad0a9224b5d9ea11dd1a2c71671789709197690eece94b8c61ed584f7b1"
+    },
+    {
+      "path": "bin/libopencv_ml-500.dll",
+      "bytes": 681648,
+      "sha256": "64b78f424e500bc72e94b1717b4a0455d8bc76b2d489c3e99283c29abc2cdf7a"
+    },
+    {
+      "path": "bin/libopencv_videoio-500.dll",
+      "bytes": 818999,
+      "sha256": "820701b1d7b40df9a3c92c60b4653c95ff7e6df7b188e18a731b198723d98cc6"
+    },
+    {
+      "path": "bin/libOpenEXR-3_4.dll",
+      "bytes": 1231115,
+      "sha256": "a6248099ac2b2b220de600b787e9a91008b966f04ba0bc4ecc604cb39fd2d6d5"
+    },
+    {
+      "path": "bin/libOpenEXRCore-3_4.dll",
+      "bytes": 462713,
+      "sha256": "1c2b6876cd23bc960e282291689dbafa081dca260871a88c1533024047c00ea6"
+    },
+    {
+      "path": "bin/libopenjp2-7.dll",
+      "bytes": 519082,
+      "sha256": "123587086cb1a25d2a338fb9b7c1d6bda10bf9062625b4f08c6a92b3d9cafe47"
+    },
+    {
+      "path": "bin/libopenjph-0.32.dll",
+      "bytes": 654047,
+      "sha256": "881bac2124245aa71a3900874a1246a224848313daac8145525a66d314b3bf36"
+    },
+    {
+      "path": "bin/libopenmpt-0.dll",
+      "bytes": 3117685,
+      "sha256": "477ebf8e26acf53cf76efce2ce4558d46a7f6492d8aa00cb6dfb66282dd09868"
+    },
+    {
+      "path": "bin/libopus-0.dll",
+      "bytes": 500112,
+      "sha256": "90aa25a0a6525d7da48a7ae8dd3306e45b0c28ce09a73d2a02b56cd95418d5be"
+    },
+    {
+      "path": "bin/liborc-0.4-0.dll",
+      "bytes": 593351,
+      "sha256": "a67503ff433d06faf8089084554e6bbe47b1e58fc045ff98dc98e1e16028736f"
+    },
+    {
+      "path": "bin/libp11-kit-0.dll",
+      "bytes": 1594910,
+      "sha256": "ada3949f3763db47a754eec56388f3305c41c259eb3bbae188a820fd01c5445b"
+    },
+    {
+      "path": "bin/libpango-1.0-0.dll",
+      "bytes": 434535,
+      "sha256": "078881c139e7dd422c4cb5f9c43b939712eb7ad4f3d7d25c41639873e8aec6d6"
+    },
+    {
+      "path": "bin/libpangocairo-1.0-0.dll",
+      "bytes": 83118,
+      "sha256": "b9f800abeafd27c07dc9f9fa4a41bb614564038ce7ac5753ca6c60c1d7d555cc"
+    },
+    {
+      "path": "bin/libpangoft2-1.0-0.dll",
+      "bytes": 111841,
+      "sha256": "38602e75c85e149bf7294bccb8792f54299daed45509a8ac4b3a18e3921ec56e"
+    },
+    {
+      "path": "bin/libpangowin32-1.0-0.dll",
+      "bytes": 111376,
+      "sha256": "2fb6d21cce830182c9d4bf22015dec9abbb0846ebce828ca0a5d4cefc74e46c6"
+    },
+    {
+      "path": "bin/libpcre2-8-0.dll",
+      "bytes": 707427,
+      "sha256": "ed6f43f96b0891a5b470e724f727bb4c12255354e609b40bd81fd5be6c0b56ac"
+    },
+    {
+      "path": "bin/libpixman-1-0.dll",
+      "bytes": 740378,
+      "sha256": "55ce45825eb8e825c635416171be4736147a6b0b690469f545d8c4ae8e85b4a3"
+    },
+    {
+      "path": "bin/libplacebo-360.dll",
+      "bytes": 1236730,
+      "sha256": "4edb51d4e74ede8d9543571ed5f6fe896c4fe4894e58a14dcfafbb9c0aa6ddc2"
+    },
+    {
+      "path": "bin/libpng16-16.dll",
+      "bytes": 260070,
+      "sha256": "fdac85bb70ec3af940810036eb9838765dceb61aaf81a60b244209f99c617f3d"
+    },
+    {
+      "path": "bin/librav1e.dll",
+      "bytes": 3527680,
+      "sha256": "6fe18e4a040c471dc13bcea44ecd2c6a3c040971542c6b798627e4c787056acb"
+    },
+    {
+      "path": "bin/librsvg-2-2.dll",
+      "bytes": 11775056,
+      "sha256": "436d3b76411afd3072d2b46504906de01606d5ed89736cfed3b59efafcda8b6d"
+    },
+    {
+      "path": "bin/librtmp-1.dll",
+      "bytes": 183492,
+      "sha256": "2c8c2ea1a686d954129b94c06dd2ab2163d45521211376ea2694f131d75ce6fc"
+    },
+    {
+      "path": "bin/libshaderc_shared.dll",
+      "bytes": 10666154,
+      "sha256": "803dd276af99afa40e96836484fea513852fba773fc45690c5eef5a5ebc3ae94"
+    },
+    {
+      "path": "bin/libsharpyuv-0.dll",
+      "bytes": 53757,
+      "sha256": "ab0c9f61dc69b6bcdff1011e215f8d5fd6e5096aba9be3386ab87f217fbbeffe"
+    },
+    {
+      "path": "bin/libsoxr.dll",
+      "bytes": 352768,
+      "sha256": "655087dac926b304969b2171de0be277a36f167989d4c7214612faf591ac9929"
+    },
+    {
+      "path": "bin/libspeex-1.dll",
+      "bytes": 137822,
+      "sha256": "3cd8b5e812022307d8ba09747b648a7402fc4caa44b50e328b3424102ab98f3a"
+    },
+    {
+      "path": "bin/libspirv-cross-c-shared.dll",
+      "bytes": 3434910,
+      "sha256": "b769dd849d7dcbf7668ddbb55f66acbd0e26152da1112d796fbd0635c3aacd29"
+    },
+    {
+      "path": "bin/libsrt.dll",
+      "bytes": 859218,
+      "sha256": "b22b8f07a36d4b52aaa2601c70240fd7a8a111894881192edd1de5e236fc64fa"
+    },
+    {
+      "path": "bin/libssh.dll",
+      "bytes": 626451,
+      "sha256": "4e872f2b9329edfb3112c433a2c4c98efc915d0bca2b1b935a58e45e37ce0a3b"
+    },
+    {
+      "path": "bin/libstdc++-6.dll",
+      "bytes": 2661299,
+      "sha256": "887c21dbe2a211ac4d1a790e4f608b7dee27fae12352856963004e7a715d2e6c"
+    },
+    {
+      "path": "bin/libSvtAv1Enc-4.dll",
+      "bytes": 7573028,
+      "sha256": "c4d9e2ae03f80d43c0a16d1461503e1768b160cdba9f3fe9e95e339f69fc2b24"
+    },
+    {
+      "path": "bin/libtasn1-6.dll",
+      "bytes": 113467,
+      "sha256": "95821132a7d4ea90f7c37540118ad1459809ff23162d6dc3d5600b15755a644b"
+    },
+    {
+      "path": "bin/libtbb12.dll",
+      "bytes": 291519,
+      "sha256": "ddfd5f7cdb888f88e314f4307d1a14bf8c724697996acadeafb15891bf002fb2"
+    },
+    {
+      "path": "bin/libthai-0.dll",
+      "bytes": 72294,
+      "sha256": "5d741974fdec19e0f6cddbcdb539428af0c7392740a056634714c2884157fdb9"
+    },
+    {
+      "path": "bin/libtheoradec-2.dll",
+      "bytes": 97211,
+      "sha256": "4f75e430b4e9a3e7c5e6d1da1f7999d8d75c5e505b8a34863cb4c6f82236a771"
+    },
+    {
+      "path": "bin/libtheoraenc-2.dll",
+      "bytes": 247180,
+      "sha256": "c8119dcf51d98673cc55ec47fd54ab60e65fbf6191f0b6fc907afa3ebdc26bb9"
+    },
+    {
+      "path": "bin/libtiff-6.dll",
+      "bytes": 625178,
+      "sha256": "47fe69165bf8e211aaa84224f51f145dc894e330fe7ca167f7c99419e0c8c894"
+    },
+    {
+      "path": "bin/libunibreak-7.dll",
+      "bytes": 140772,
+      "sha256": "e146c2f36b2e36f620238f2bf0820ef9e74f5b39fbfb9ffe99183bb4a21809f0"
+    },
+    {
+      "path": "bin/libunistring-5.dll",
+      "bytes": 2251328,
+      "sha256": "b91e2850d3668d4931056a8f4d35783b8ec3eea3735485108a936a072cd16071"
+    },
+    {
+      "path": "bin/libva.dll",
+      "bytes": 286510,
+      "sha256": "1600880518a5c9d454dc26f151c0bf4969f60cc7fb53ade023e1816ddefdf141"
+    },
+    {
+      "path": "bin/libva_win32.dll",
+      "bytes": 17070,
+      "sha256": "710033877d446638b686de916595e1470d194db55395b2f907abaff26298f5d3"
+    },
+    {
+      "path": "bin/libvidstab.dll",
+      "bytes": 153183,
+      "sha256": "3a2d95ea86bbcf049d90fbaf7a8cf07516464b77d9475246303ced38df17e737"
+    },
+    {
+      "path": "bin/libvorbis-0.dll",
+      "bytes": 184216,
+      "sha256": "3282629e1b5d6ececcfde133b20fe73de5c81b6eadfbb4697e6718886c7c97a6"
+    },
+    {
+      "path": "bin/libvorbisenc-2.dll",
+      "bytes": 578809,
+      "sha256": "090f0734883464af440eb9084b22384951b95b1bf325236b322dbef7f93530aa"
+    },
+    {
+      "path": "bin/libvorbisfile-3.dll",
+      "bytes": 38089,
+      "sha256": "78559fbab64af27b66bd0904bdee7afb16190e66ca3d67323958aa59d2687c8d"
+    },
+    {
+      "path": "bin/libvpl-2.dll",
+      "bytes": 480963,
+      "sha256": "670c4a28094b9f0d2aefe1e666c61e9e5eb7315f1ffd0bf12e4731727c6254e6"
+    },
+    {
+      "path": "bin/libvpx-1.dll",
+      "bytes": 4412330,
+      "sha256": "ce199be3f352d76a1994ca7e4b0549ca6f8a6700ba5f5bbde24adef262256f01"
+    },
+    {
+      "path": "bin/libwebp-7.dll",
+      "bytes": 749724,
+      "sha256": "c6c21a10f8cfe13270832e64640b82709e1d87b956b5f15af435a6c25acd6bbf"
+    },
+    {
+      "path": "bin/libwebpdemux-2.dll",
+      "bytes": 25726,
+      "sha256": "10fd43e1820a03dea175e3c4a7c96ba0463d41971f4ec75dbd375d10b585446a"
+    },
+    {
+      "path": "bin/libwebpmux-3.dll",
+      "bytes": 82858,
+      "sha256": "2c8a2e9d7901ec65330f31f9989c2a07ef0506e903b485fcd8b241a6bab9b88f"
+    },
+    {
+      "path": "bin/libwhisper-1.dll",
+      "bytes": 508016,
+      "sha256": "7d493240bb6124d376730f87419f4710ac857dafe432836e0617795cadd257d6"
+    },
+    {
+      "path": "bin/libwinpthread-1.dll",
+      "bytes": 63840,
+      "sha256": "2e74ef2965ec0d8f7e0543f40293b212d2f5c8680de147643ea6dd4b8b5cb749"
+    },
+    {
+      "path": "bin/libx264-165.dll",
+      "bytes": 2024174,
+      "sha256": "0d814d13db7eeac0ff5264ed86d376f9260746323107cb07affb6c306b240329"
+    },
+    {
+      "path": "bin/libx265-217.dll",
+      "bytes": 22667339,
+      "sha256": "23a4579cf07ad233818d53f941e846847876cb68f57e4492f943d26463cc995f"
+    },
+    {
+      "path": "bin/libxml2-16.dll",
+      "bytes": 1255475,
+      "sha256": "81e97f59e486f95de3b8b12973860102cddebbaaeedbbc22786aaec0728b2c68"
+    },
+    {
+      "path": "bin/libyuv.dll",
+      "bytes": 1007376,
+      "sha256": "32dc2899b7cb6e5403f13d723c885db7025b50c41a2d930a033daff4acb955ae"
+    },
+    {
+      "path": "bin/libzimg-2.dll",
+      "bytes": 636837,
+      "sha256": "26ad6d01991171038ca5a4078a3854ea2f7765beb572e567a83ce15d495d75dc"
+    },
+    {
+      "path": "bin/libzstd.dll",
+      "bytes": 1218273,
+      "sha256": "b95c223a9548a9ecf51377c962e0bc8f0c51eb0c6f67a296dbc885996f0dd40d"
+    },
+    {
+      "path": "bin/libzvbi-0.dll",
+      "bytes": 450046,
+      "sha256": "fa1b722aa22739a9b147f7c918a981c51fc48ebd1269b192e412b6f346f816cc"
+    },
+    {
+      "path": "bin/swresample-7.dll",
+      "bytes": 185757,
+      "sha256": "db2c62bfc7c7eabe40f992c50fc28480172abc814c48ce9ab1bd6aad4171acbd"
+    },
+    {
+      "path": "bin/swscale-10.dll",
+      "bytes": 2214836,
+      "sha256": "e699e88cdaff46bff3c47fd6619242c5715f4d94de70413b7a60fce825bc814b"
+    },
+    {
+      "path": "bin/vulkan-1.dll",
+      "bytes": 724975,
+      "sha256": "1d848aabe2673d89ccbced220cbc0b98793b49aa38e3b2d7b5a71e28f4875016"
+    },
+    {
+      "path": "bin/xvidcore.dll",
+      "bytes": 781411,
+      "sha256": "1c19803a7d0d8fe21064459dd51725ffdefb07a96079967417bf597178b4db33"
+    },
+    {
+      "path": "bin/zlib1.dll",
+      "bytes": 128488,
+      "sha256": "93e9243a44c29200eeacaf9658efe2558581770e4b11ca4b500e18e424a6e3b5"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 2217,
+      "sha256": "b1d8b2ece00f8bc28306c0afaadf57b419c2a08d6e6bd305012833a845ce738a"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20000.png",
+      "bytes": 253736,
+      "sha256": "92534e5c45ceb4a8a43d9affb744350c2fe976d0ffde055f384381f1aec3bec4"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20000_GT.png",
+      "bytes": 241,
+      "sha256": "80b1bbeab6c03d58b3ad5f9703cbaeeabff34866b4c3168efebb2ab06e641f86"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20001.png",
+      "bytes": 261667,
+      "sha256": "2f4bd1f8e4ded902b0b0cb84e9267f5d0f4ccaaae70218334765af328addf9e0"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20001_GT.png",
+      "bytes": 243,
+      "sha256": "e372f4aad6eab9c2adf97eb4345fea4f92fce9dc7184aed5f016ab90df665bad"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20002.png",
+      "bytes": 254166,
+      "sha256": "2bd034bf82b0babf1f881ccf97af80ac0f54d86e8d17cbbe0146fa9e9650db5c"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20002_GT.png",
+      "bytes": 241,
+      "sha256": "dc4716e9b8c6fa950657b0841ac09208f081c8b28a6f46ec29f9de3b71c3886e"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20003.png",
+      "bytes": 255561,
+      "sha256": "974f6b1670b5be22c7b42cf047721c26662c18338df3eead46c932f152a9f0d8"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20003_GT.png",
+      "bytes": 240,
+      "sha256": "384836a5dee5994da77dcca0798ff75f7624df193dea5331cc7b9faa45f65ad1"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20004.png",
+      "bytes": 261295,
+      "sha256": "0104cf24b6a6629a12fa6c0274d5fd25d4a4d964df20f5c045e5fba15cb25ab8"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20004_GT.png",
+      "bytes": 240,
+      "sha256": "921aefa9123058a5dc77ca8902d1d5cdb9cf98720ec716b936403a9ae73f392f"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20005.png",
+      "bytes": 252323,
+      "sha256": "dd59d972df368a33e5c2182cf1db2c1d70a5de22c8c6f59dbc9861dc63e44502"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20005_GT.png",
+      "bytes": 241,
+      "sha256": "568d9dc10bccfa7cce58517272f5d992d64fd6e6e8fa587ef60cceab3a7d5567"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20006.png",
+      "bytes": 256549,
+      "sha256": "2a86bf1b0b54d9e83d51ac48dd41a4ffbb0f5377dd0e43164aadf54447b5bc3f"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20006_GT.png",
+      "bytes": 240,
+      "sha256": "3acd1a744bf3db2428221cc546efceef878e90d305ed3f40321521344f494082"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20007.png",
+      "bytes": 254183,
+      "sha256": "3c3083608725353b830a324e5936c680cdb0499fea6fe4c5bffa29d89f36fa8e"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20007_GT.png",
+      "bytes": 238,
+      "sha256": "086096c699b86368ab43c49c96e61992478c7daa6d5cc50894b85046a51349c1"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20008.png",
+      "bytes": 259454,
+      "sha256": "4df06286d0cfe7ebfe25cb5c1ffe35db2b6c860337995edaabdfcc0873062605"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20008_GT.png",
+      "bytes": 241,
+      "sha256": "a167b22c3de5b0422b093537f6e6aa554b6ef9940b233a22f4d780ad9ccfefbe"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20009.png",
+      "bytes": 253590,
+      "sha256": "a5a47039b2c740e43a1752c5ef4f67087eb6579701aa9cdd4eab0f1f49005e10"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20009_GT.png",
+      "bytes": 241,
+      "sha256": "ad10ea0be8b11d7c261d17612289a5580ff63ad70e19b5598042392a1f95c55a"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20010.png",
+      "bytes": 256745,
+      "sha256": "c59fd5a0dca382482b6a186f91687243f09e24784c1a8b0e49897774daa1f1c3"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20010_GT.png",
+      "bytes": 241,
+      "sha256": "99dec48672734e7b33c4b21f4c25d2d80ca37619fbe97bf48e86db7d317814cb"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20011.png",
+      "bytes": 258330,
+      "sha256": "c05b73b447798d76f2a3912d8fba0aad3f67232afd0ac7d0807b9755bb9288b9"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20011_GT.png",
+      "bytes": 243,
+      "sha256": "f6eb447944bdd0dd843724967aff9a666213041f29b4b39f1e847b006120bb8e"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20012.png",
+      "bytes": 263033,
+      "sha256": "7e99e24d5a7a24330732327a787076fbb98167af6ef41579f67cf1f6ea95bf7b"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20012_GT.png",
+      "bytes": 243,
+      "sha256": "16b2fc968b38a53680d16639f37371399b68b8bb917c82bcef59f95550be2572"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20013.png",
+      "bytes": 258102,
+      "sha256": "01c788e6c45b477b4da55470264beee93e6dbc7040359960ef44ba85ea585f94"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20013_GT.png",
+      "bytes": 240,
+      "sha256": "81418af2e7c1d82b9f136c0b41d348d5837006884f4f8778ccb8f80822943790"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20014.png",
+      "bytes": 253031,
+      "sha256": "61a09e5f898d393507c7121621d460deb29fb00d565cceae4a1868865d887e46"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20014_GT.png",
+      "bytes": 240,
+      "sha256": "9785d6df62888cab72b078bf9e2ef7534e2cc4eddd4ae2c345032e2e286f1646"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20015.png",
+      "bytes": 248045,
+      "sha256": "f9552c072621def567cafae4a3e7e6ea20ae21576362c1e10ed4d98161558d24"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20015_GT.png",
+      "bytes": 238,
+      "sha256": "29082c48466a19df2821e5caae485116655ec57b727d42a07b933cc80cd25140"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20016.png",
+      "bytes": 257939,
+      "sha256": "bdf152411421569b0eca0410a0ede39e5bc6e3be85710cac87847aa2e8e05943"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20016_GT.png",
+      "bytes": 243,
+      "sha256": "6be690be5eca90c2dd83e5962d1731bf513583bfddba880b101307e5da75a24d"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20017.png",
+      "bytes": 243191,
+      "sha256": "8e28b45eb429c4d8a70ae36962876fb28489f0bec562667ea5af7ff0aa074159"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20017_GT.png",
+      "bytes": 232,
+      "sha256": "87bfeafc7d2ffb9bec0f5196716261400d583a293391474d31edcb7c29069edd"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20018.png",
+      "bytes": 263831,
+      "sha256": "1697bfc44c015992b73525156e483d4988f2e038605cdafd31b534ee3e8b4c1c"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20018_GT.png",
+      "bytes": 243,
+      "sha256": "1df401a4604a7d837d3dda817713626d1799ace260da643712f66935ed34ba06"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20019.png",
+      "bytes": 254892,
+      "sha256": "a9f378e98a93a50ce65652cbadeb49938056aa3904094385d3925954d2792c07"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20019_GT.png",
+      "bytes": 242,
+      "sha256": "4f9491c4e32883702e0eb9dc2c48587d7d00397f69fab56e99fedd7ebf897e9d"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20020.png",
+      "bytes": 254413,
+      "sha256": "6d359581247aeea1d4ba7e8bf416688928207e98efe0ebadbd2ca0628dc8531b"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20020_GT.png",
+      "bytes": 239,
+      "sha256": "8a131b7062245263cdfa0c839112f36d3ea95a71d7e26813bea02307afea6522"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20021.png",
+      "bytes": 258092,
+      "sha256": "b8421a9a71abaf3b3c2f8ac8aa71e6e7dc7fe04332d1541001712db33491f861"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20021_GT.png",
+      "bytes": 241,
+      "sha256": "d2bd7782aa0f4620f1a4cf6307274e978991ff62ab4f61f5cd96ce74878a9fd4"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20022.png",
+      "bytes": 256322,
+      "sha256": "023bd155a2aa02675e16829ea6ba8372726e1df3e7977642a67a862bf97984b3"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20022_GT.png",
+      "bytes": 243,
+      "sha256": "cf38c79d84eb092043d4d733fadef1bda7cee2ec22cf9b36ad2c816648a13ef7"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20023.png",
+      "bytes": 249678,
+      "sha256": "e53db35c4c781235436b3b4cd04ba3fc9e881c5231a35e2363693a582b0b0dca"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20023_GT.png",
+      "bytes": 241,
+      "sha256": "931dbe9b2c8bf1797a7b474e1364f91650a397362ba65a83e62abd83e806270a"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20027.png",
+      "bytes": 258002,
+      "sha256": "cb418ca33883b68fc706dc7723fce8d76ed22ae6e57aadec859fc7b0e8da16ed"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20027_GT.png",
+      "bytes": 242,
+      "sha256": "fcefff49c655e33387f1c74dbef042d62539684af5b9746063928bb6572faef4"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20042.png",
+      "bytes": 255474,
+      "sha256": "48c7e272a0fc3d84928efbe3259bce556dc6381b47dba1e42101885998072717"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20042_GT.png",
+      "bytes": 707,
+      "sha256": "df9d58a860a340fc5fb0cb1ef19266e9fd542eec99d639db613bb059374478a4"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20056.png",
+      "bytes": 267808,
+      "sha256": "ada0c6f4c35a908c490b675885ba02d140c3782451c62f778ca55b38c36c9fde"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20056_GT.png",
+      "bytes": 505,
+      "sha256": "0debf542ad42108fa3a119dd00af46fd51f93f19354023a7b88faf0a4ca3cb24"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20068.png",
+      "bytes": 247329,
+      "sha256": "77cdc4b8049a62099eb6ab1e6eae0748708bb18529afd9788a3647ded28e87bd"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20068_GT.png",
+      "bytes": 576,
+      "sha256": "44464ff05183049bb84cfdb6af1b32bebb9ff460684b4d2bc43c85535612ef19"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20095.png",
+      "bytes": 259527,
+      "sha256": "1a48fdb703aeada0a69338633af1050b729e8dbd7a4798a4b21ec45f3d5e758e"
+    },
+    {
+      "path": "data/KolektorSDD2/test/20095_GT.png",
+      "bytes": 746,
+      "sha256": "dbb4eb8c6737984fa9c5d8bade79f41704dc37cfe57911459689b451c419f350"
+    },
+    {
+      "path": "DEMO_SAMPLES.csv",
+      "bytes": 710,
+      "sha256": "631737ee8aa4a51b01bafa723c74a2149d96aeee1136582db4a34bbda6fabae3"
+    },
+    {
+      "path": "outputs/confusion_matrix.csv",
+      "bytes": 67,
+      "sha256": "6a2be8dcbe07cb6f9929eee8093299effde24ee50f602d0f576b2194b358ceff"
+    },
+    {
+      "path": "outputs/dataset_audit.txt",
+      "bytes": 518,
+      "sha256": "8819bfaf70834042f003b93309e5c349a84a1939e67b2168f51ac089eee26680"
+    },
+    {
+      "path": "outputs/dataset_source.json",
+      "bytes": 574,
+      "sha256": "7bba87b0d64306e839e4633b07c4e7e248de2018d643db23d0ea5c233d0ee71d"
+    },
+    {
+      "path": "outputs/demo_frames.csv",
+      "bytes": 346,
+      "sha256": "c3b632d054b18fabb2e18587c2572296afbdd86a285e127ac5fb15d1926e0632"
+    },
+    {
+      "path": "outputs/demo_sequence.avi",
+      "bytes": 511008,
+      "sha256": "99446879d9afae1dda0c57efdf26cdb305105f4dbc29101bff8b4aadb9679c4b"
+    },
+    {
+      "path": "outputs/development_split.csv",
+      "bytes": 180442,
+      "sha256": "5f015a4a22f8247f2ff5c1b0040ed63befd8b2ae53b1b372ba0a894780794ea5"
+    },
+    {
+      "path": "outputs/environment.json",
+      "bytes": 3761,
+      "sha256": "fb50c6e25eb64f7650f9e6ed7dc389925a78dad2dddd6b4ef2833cc281b4ad9f"
+    },
+    {
+      "path": "outputs/examples/FN_20068.png",
+      "bytes": 804854,
+      "sha256": "3ac2f096543d44dbf97878fb5483fee3ac38fe1a996a0e48d115b999e5be39c7"
+    },
+    {
+      "path": "outputs/examples/FN_20095.png",
+      "bytes": 850406,
+      "sha256": "1749bcb30a80cbe97848354388c482615be7e74d2d8457407bc32f112a1c9452"
+    },
+    {
+      "path": "outputs/examples/FP_20008.png",
+      "bytes": 857420,
+      "sha256": "e546f5f69019df8fea7566fa654221d9fd87714872fff11649d153aa87177eb1"
+    },
+    {
+      "path": "outputs/examples/FP_20027.png",
+      "bytes": 849179,
+      "sha256": "d93fc7dd65c3b5993b0149fa24e489ff68bcea38a22ca26aa166e9ae7b7cb8a8"
+    },
+    {
+      "path": "outputs/examples/TN_20000.png",
+      "bytes": 829085,
+      "sha256": "b4bb3c3619bcb9b90f42ebfc1e45cc47f869a32f26137333de03c480b5f9f0e1"
+    },
+    {
+      "path": "outputs/examples/TN_20001.png",
+      "bytes": 866265,
+      "sha256": "b0acd36ff78ee3338bad40d0a56decb49121a72504c34bcc22ecf889cb9c8b5f"
+    },
+    {
+      "path": "outputs/examples/TP_20042.png",
+      "bytes": 828150,
+      "sha256": "ba7037f4577f1e070e025eb8509a13f8015d0aad596b7b0536ccd78824b66a68"
+    },
+    {
+      "path": "outputs/examples/TP_20056.png",
+      "bytes": 874974,
+      "sha256": "2f3304527aabda5c108327d232e5a632ae3aac6b4d52101804f37f6a238f5ba6"
+    },
+    {
+      "path": "outputs/final_test.json",
+      "bytes": 1550,
+      "sha256": "63fa6dd0c2d4adda8012b77136966d5aabd56a5e4bf0417b46ca7f74309145c6"
+    },
+    {
+      "path": "outputs/graphics_smoke.json",
+      "bytes": 593,
+      "sha256": "94588e4be92626116c8e1b683fd0e2f7d68116f7b92118e6268f3b792188e5d8"
+    },
+    {
+      "path": "outputs/localization_validation.csv",
+      "bytes": 619,
+      "sha256": "dc7545024334f6445e165224a26adff7637b35ad4714b7915f34e8dab9cf39e0"
+    },
+    {
+      "path": "outputs/manifest.csv",
+      "bytes": 407246,
+      "sha256": "864813d4ab7afc40c966e0983ba66f507dd7db1ffed56cafe884b79c89853f51"
+    },
+    {
+      "path": "outputs/model/classifier.xml",
+      "bytes": 1160961,
+      "sha256": "1ca676d8e53d7b78bb9f98c4c3517a48af695a751232fb02717ea3c3d38d19d6"
+    },
+    {
+      "path": "outputs/model/pipeline.yml",
+      "bytes": 4083,
+      "sha256": "1e94816431db8d09c9662c668e8b635581f54f48d5d08ff5c68d89c77700aa66"
+    },
+    {
+      "path": "outputs/model_comparison.csv",
+      "bytes": 920,
+      "sha256": "b4c71050746315e4579f4d8c4735685a27a44daf65d3f5bd2f3c766ce1ae64f3"
+    },
+    {
+      "path": "outputs/runtime_checks.json",
+      "bytes": 276,
+      "sha256": "e9e29282405df51ec1bc861314e58f0b3a2072fb1e7bd1a60b9ad25e056c1e17"
+    },
+    {
+      "path": "outputs/screenshots/01_original.png",
+      "bytes": 503369,
+      "sha256": "1a5db21c8b644ce748c83a8c17f210f3e8cb4d14e43c6498f546f7d363e54bdb"
+    },
+    {
+      "path": "outputs/screenshots/02_processed.png",
+      "bytes": 472039,
+      "sha256": "77eb9146226a4a93ec17cb9afbd77b69522ed907e0290ad0647bfb0d8edb77f8"
+    },
+    {
+      "path": "outputs/screenshots/03_rotation_roi_overlay.png",
+      "bytes": 647522,
+      "sha256": "47348b43431152a92757b48ad982b43aa5a2a717a5d35879149752f18509d050"
+    },
+    {
+      "path": "outputs/screenshots/04_resized_overlay.png",
+      "bytes": 314617,
+      "sha256": "3f39f69a3b3cedc9efaa6e3625d4abed2ece2df3b6e830d855139ab35288b1a2"
+    },
+    {
+      "path": "outputs/screenshots/05_video_frame.png",
+      "bytes": 487707,
+      "sha256": "da4d0a651db3b63f7b127b8c5045213ea826ef2ea198ac35e107c15df430b1db"
+    },
+    {
+      "path": "outputs/screenshots/06_about_team.png",
+      "bytes": 626324,
+      "sha256": "a2a4af8b709042187fed1202a2aa31d95c13ab532dacf249d56e21260415145a"
+    },
+    {
+      "path": "outputs/test_localization.csv",
+      "bytes": 20414,
+      "sha256": "30d7b90008fc469296b832709500fe4033aa47d5feb911c921ae20fd89dfe6ef"
+    },
+    {
+      "path": "outputs/test_predictions.csv",
+      "bytes": 23299,
+      "sha256": "df0d0bc8148065509d2ef038b3b821c737035bc008c5fd306c93415815cab9d9"
+    },
+    {
+      "path": "outputs/training_summary.json",
+      "bytes": 846,
+      "sha256": "ebcd0179844f7514dcebb895115c03b8f7575a435e64596adf2480713584a9ee"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14385,
+      "sha256": "7adc9b4d399530caf15deda4c32477ef72e8c125f51871683d1cb78ef61c078a"
+    },
+    {
+      "path": "RUN_CHECKS.cmd",
+      "bytes": 1144,
+      "sha256": "4a5e2ae07e9d7ca078ec7cda13dc103bf8990e617e7f6de942491660be1f57bc"
+    },
+    {
+      "path": "src/evaluation.cpp",
+      "bytes": 24068,
+      "sha256": "30d9930f0d6e230380175cb759af6f602ed346ebd6fbd7c1bc4a929fd75c77db"
+    },
+    {
+      "path": "src/geometry.cpp",
+      "bytes": 2465,
+      "sha256": "6550605ff4ad54ad604936d7eda6c3d46d510dbf18cad5e911037ec518315c34"
+    },
+    {
+      "path": "src/geometry.hpp",
+      "bytes": 1029,
+      "sha256": "c7a7a5f965248a0c9128dc3d1917136c12503560f0806b91aff330344048c773"
+    },
+    {
+      "path": "src/integration.cpp",
+      "bytes": 8795,
+      "sha256": "f1cfa363b6b85c7644d797419cbff265ca6d42606cb312606005039d87598e20"
+    },
+    {
+      "path": "src/integration.hpp",
+      "bytes": 1422,
+      "sha256": "d84569681ec15d75368c5159e66c23b8e95dc7dbcb3fe7dff69c89d7c4d1687b"
+    },
+    {
+      "path": "src/main.cpp",
+      "bytes": 2481,
+      "sha256": "b6745bc4a6ada7483640c51028393cb8a476636b3c37cb7511bc38649618c892"
+    },
+    {
+      "path": "src/pipeline.cpp",
+      "bytes": 13223,
+      "sha256": "0c001a6b89dc78cc521f875bbe143c4f1c13be5a712eb4aee8e678ec6be810be"
+    },
+    {
+      "path": "src/pipeline.hpp",
+      "bytes": 2211,
+      "sha256": "0333f1d018e767668802b30336874aa51f09be3f9b9de058cc5d501ee92ba39d"
+    },
+    {
+      "path": "src/viewer.cpp",
+      "bytes": 41329,
+      "sha256": "cfe588dcd1a90df48972a693b96884fe133c73a66153d688d5c88c972108815d"
+    },
+    {
+      "path": "START_APP.cmd",
+      "bytes": 264,
+      "sha256": "264b49335c97c52bb91f1cfc593d77254709f2339782786accd8a30055aa78d6"
+    },
+    {
+      "path": "tests/core_tests.cpp",
+      "bytes": 5359,
+      "sha256": "2680f1017430028825d3e9f4301568252ceb9cae5182d40ffb79a7dd244883be"
+    },
+    {
+      "path": "third_party/DATASET_NOTICE.txt",
+      "bytes": 574,
+      "sha256": "b1f581573ef6d5a13d7ea863ae8dfb8625b6c7acc7c929cc3976c02cdab0c359"
+    },
+    {
+      "path": "third_party/DEPENDENCY_SOURCES.json",
+      "bytes": 54938,
+      "sha256": "402ac93e3b471aa8d01665c41595903dfc4e6a7d95d49a2b3064e1be4510ea6e"
+    },
+    {
+      "path": "third_party/licenses/aom/LICENSE",
+      "bytes": 1316,
+      "sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2"
+    },
+    {
+      "path": "third_party/licenses/aom/PATENTS",
+      "bytes": 5701,
+      "sha256": "661fb8e504744e95587b556b94a58343448300606a41bea8c7a9b97125696e61"
+    },
+    {
+      "path": "third_party/licenses/brotli/LICENSE",
+      "bytes": 1084,
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+    },
+    {
+      "path": "third_party/licenses/cairo/COPYING",
+      "bytes": 1576,
+      "sha256": "67228a9f7c5f9b67c58f556f1be178f62da4d9e2e6285318d8c74d567255abdf"
+    },
+    {
+      "path": "third_party/licenses/cairo/COPYING-LGPL-2.1",
+      "bytes": 26533,
+      "sha256": "9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d"
+    },
+    {
+      "path": "third_party/licenses/cairo/COPYING-MPL-1.1",
+      "bytes": 25755,
+      "sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f"
+    },
+    {
+      "path": "third_party/licenses/cppdap/LICENSE",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "path": "third_party/licenses/curl/LICENSE",
+      "bytes": 1088,
+      "sha256": "82f2f4427d6545ee5aaac4f0b80428da6cc8ba41c2cf5da3a03680ec327b9681"
+    },
+    {
+      "path": "third_party/licenses/dav1d/COPYING",
+      "bytes": 1317,
+      "sha256": "dd92c3c2247c5651606fc23a5e2d6a1ebc5ace9a3e49cbde0e12f05ad1cb1ee5"
+    },
+    {
+      "path": "third_party/licenses/dav1d/PATENTS",
+      "bytes": 5730,
+      "sha256": "335eca574598bf4ca181b12f708d6669e5a5e78c8e1513e5b35fa1f03901484b"
+    },
+    {
+      "path": "third_party/licenses/Dear_ImGui_MIT.txt",
+      "bytes": 1083,
+      "sha256": "c80c5789748d955c4a650562baa0d750494e2c7128c2ca66aaebe2e3c4e198bf"
+    },
+    {
+      "path": "third_party/licenses/fontconfig/COPYING",
+      "bytes": 8616,
+      "sha256": "51a51aa9823704fd90bccc616cdd17ebabb5b2b3e9cbde886ca02c7002288067"
+    },
+    {
+      "path": "third_party/licenses/freetype/FTL.TXT",
+      "bytes": 6743,
+      "sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f"
+    },
+    {
+      "path": "third_party/licenses/freetype/GPLv2.TXT",
+      "bytes": 17994,
+      "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18"
+    },
+    {
+      "path": "third_party/licenses/fribidi/COPYING",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/gdk-pixbuf2/COPYING",
+      "bytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    {
+      "path": "third_party/licenses/ggml/LICENSE",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "path": "third_party/licenses/glew/LICENSE",
+      "bytes": 3797,
+      "sha256": "8991cd11befec7c6a63662700f03c0cc42e864b6e77c7e70b80297c951a7f0ff"
+    },
+    {
+      "path": "third_party/licenses/glfw/LICENSE",
+      "bytes": 904,
+      "sha256": "149704059b5d0bf551637e50042dd4de9c2cae921021f6636298911e3a5f9462"
+    },
+    {
+      "path": "third_party/licenses/glib2/COPYING",
+      "bytes": 25967,
+      "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb"
+    },
+    {
+      "path": "third_party/licenses/graphite2/COPYING",
+      "bytes": 1235,
+      "sha256": "2c272829ff23f182c8bf7ea12fedea69b0ae148663123ed5240c117cb129c9c1"
+    },
+    {
+      "path": "third_party/licenses/graphite2/LICENSE",
+      "bytes": 29228,
+      "sha256": "cab46cd45adbfea4b1d0f14b033c70062c73074fa0b56532c2f351576ddf455e"
+    },
+    {
+      "path": "third_party/licenses/gsm/license.txt",
+      "bytes": 1450,
+      "sha256": "81c68a3374937ed9b5e4929c709e81a2c4b35b5d1f450ecf8c473e2daea46ff6"
+    },
+    {
+      "path": "third_party/licenses/harfbuzz/COPYING",
+      "bytes": 1971,
+      "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+    },
+    {
+      "path": "third_party/licenses/highway/LICENSE",
+      "bytes": 20785,
+      "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af"
+    },
+    {
+      "path": "third_party/licenses/imath/LICENSE.md",
+      "bytes": 1497,
+      "sha256": "c20236d3b39fd20eba8e3d1fb3b892a5483df2e7d8d61bf43f165d3fac22f601"
+    },
+    {
+      "path": "third_party/licenses/jbigkit/COPYING",
+      "bytes": 17982,
+      "sha256": "91df39d1816bfb17a4dda2d3d2c83b1f6f2d38d53e53e41e8f97ad5ac46a0cad"
+    },
+    {
+      "path": "third_party/licenses/jsoncpp/LICENSE",
+      "bytes": 2714,
+      "sha256": "cec0db5f6d7ed6b3a72647bd50aed02e13c3377fd44382b96dc2915534c042ad"
+    },
+    {
+      "path": "third_party/licenses/lcms2/LICENSE",
+      "bytes": 1080,
+      "sha256": "6dbd60437f8ef91d8de1f08ad75882547fd4931bfcc3566a0735f28db1484d31"
+    },
+    {
+      "path": "third_party/licenses/lcms2/LICENSE-fast_float",
+      "bytes": 35146,
+      "sha256": "c53a65c2fd561c87eaabf1072ef5dcab8653042bc15308465f52413585eb6271"
+    },
+    {
+      "path": "third_party/licenses/lerc/LICENSE",
+      "bytes": 9198,
+      "sha256": "77a8b761727c75e2167b15bfdf61b2c0bcf8792271228bebe80779106ad00671"
+    },
+    {
+      "path": "third_party/licenses/libarchive/LICENSE",
+      "bytes": 3089,
+      "sha256": "30e556b3959e3985d66efefec5eaac51d4995053caa1d3cffe6eb916f146f229"
+    },
+    {
+      "path": "third_party/licenses/libavif/LICENSE",
+      "bytes": 20415,
+      "sha256": "165abf92cc04b39e80d29cadea7a6a7e8fddf59407d4ad2616507a7ebe8216f9"
+    },
+    {
+      "path": "third_party/licenses/libbluray/COPYING",
+      "bytes": 24478,
+      "sha256": "b3aa400aca6d2ba1f0bd03bd98d03d1fe7489a3bbb26969d72016360af8a5c9d"
+    },
+    {
+      "path": "third_party/licenses/libdatrie/COPYING",
+      "bytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    {
+      "path": "third_party/licenses/libdeflate/COPYING",
+      "bytes": 1078,
+      "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a"
+    },
+    {
+      "path": "third_party/licenses/libdovi/LICENSE",
+      "bytes": 1066,
+      "sha256": "e9d76c149b1176de4aa0202cfb6a4a266a0c4cb71959f429d670c3a857f95e52"
+    },
+    {
+      "path": "third_party/licenses/libgme/license.txt",
+      "bytes": 26938,
+      "sha256": "d2efc89fbb7533572a472d34e07964951810a3a4f8d3159ecc2dcaa1452c5c26"
+    },
+    {
+      "path": "third_party/licenses/libjpeg-turbo/LICENSE.md",
+      "bytes": 6077,
+      "sha256": "ba6bceebcba0fdd35488477c2cca8c4632ce82c74dbfbc87d886ce6fc4433579"
+    },
+    {
+      "path": "third_party/licenses/libjpeg-turbo/README.ijg",
+      "bytes": 12799,
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6"
+    },
+    {
+      "path": "third_party/licenses/libjpeg-turbo/README.md",
+      "bytes": 17722,
+      "sha256": "a44ba17ac66c57edaf0ea7c6e4b31358f08322c780e4e6af092082abb3e20793"
+    },
+    {
+      "path": "third_party/licenses/libjpeg-turbo/simd/jsimdext.inc",
+      "bytes": 15563,
+      "sha256": "68c5d236785edf75344cebe8b9bec36568bd35c96eb72cc67ffecd66c17dbd74"
+    },
+    {
+      "path": "third_party/licenses/libjxl/LICENSE",
+      "bytes": 1508,
+      "sha256": "8405932022a556380c2d8c272eff154a923feb197233f348ce5f7334fb0a5ede"
+    },
+    {
+      "path": "third_party/licenses/liblc3/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/libogg/COPYING",
+      "bytes": 1466,
+      "sha256": "d2ab5758336489da61c12cc5bb757da5339c4ae9001f9bb0562b4370249af814"
+    },
+    {
+      "path": "third_party/licenses/libopenmpt/LICENSE",
+      "bytes": 1621,
+      "sha256": "2c999e99533c10a347916a72e075bacf10fcedeff793bd90d41d812b46161da2"
+    },
+    {
+      "path": "third_party/licenses/libopenmpt-modplug/LICENSE",
+      "bytes": 1560,
+      "sha256": "10da0a40f405fdc2f940531f44788571d5d79a85a87a57e1f379300a5640e655"
+    },
+    {
+      "path": "third_party/licenses/libplacebo/LICENSE",
+      "bytes": 24478,
+      "sha256": "b3aa400aca6d2ba1f0bd03bd98d03d1fe7489a3bbb26969d72016360af8a5c9d"
+    },
+    {
+      "path": "third_party/licenses/libpng/LICENSE",
+      "bytes": 5345,
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526"
+    },
+    {
+      "path": "third_party/licenses/libpsl/COPYING",
+      "bytes": 1060,
+      "sha256": "322392e6001b2b3b0fca705dc9f11f26e12441188ecde50eb1d22909980b2925"
+    },
+    {
+      "path": "third_party/licenses/librsvg/COPYING.LIB",
+      "bytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    {
+      "path": "third_party/licenses/libsoxr/COPYING.LGPL",
+      "bytes": 26432,
+      "sha256": "f2f118b9029ec1871b953639ecc46651b2fc7b62e295e6cf3ef2ac4c9a058b33"
+    },
+    {
+      "path": "third_party/licenses/libsoxr/LICENSE",
+      "bytes": 1024,
+      "sha256": "dc98676341fdcd29d9f279c9679d6a75288785b174ded8d1b2e316c366166135"
+    },
+    {
+      "path": "third_party/licenses/libsoxr/LICENSE-PFFFT",
+      "bytes": 2122,
+      "sha256": "a9f3d236f3c14a41a1293f176d4c7c46d85404403417fcb8df6d6c9707104e42"
+    },
+    {
+      "path": "third_party/licenses/libssh2/LICENSE",
+      "bytes": 1959,
+      "sha256": "f7f9633cf9ff2f1333f3d7ce46973a8716a4d2a2815ad56f30d437d5fea7bafe"
+    },
+    {
+      "path": "third_party/licenses/libtasn1/COPYING",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/licenses/libtasn1/COPYING.LESSERv2",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/libthai/COPYING",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/libtiff/LICENSE.md",
+      "bytes": 2416,
+      "sha256": "0e27c2382d7b8147972bbb746e04059a1152c8d0fda9d03ef1399d1a433c4ade"
+    },
+    {
+      "path": "third_party/licenses/libunibreak/LICENCE",
+      "bytes": 1045,
+      "sha256": "0c57e2ec42ece17791a75d2f9b2f8e0663181be008667a507f765b3ef22522db"
+    },
+    {
+      "path": "third_party/licenses/libunistring/LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/licenses/libunistring/LICENSE.LIB",
+      "bytes": 7639,
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+    },
+    {
+      "path": "third_party/licenses/libuv/LICENSE",
+      "bytes": 1079,
+      "sha256": "16de0c32b265cb7d46a6d3bd614f259dd4d693a5e26b3407b04aae8d73041f0c"
+    },
+    {
+      "path": "third_party/licenses/libva/COPYING",
+      "bytes": 1130,
+      "sha256": "c86a782ee845b52472dae9b9d79fb915d333628ac0efe49cdce63644814931de"
+    },
+    {
+      "path": "third_party/licenses/libvpl/LICENSE",
+      "bytes": 1074,
+      "sha256": "bf1cfac2e2792b6e1e995ce103d70796aecaf2ec7e4c5fe5474f7acec7b4a677"
+    },
+    {
+      "path": "third_party/licenses/libwebp/COPYING",
+      "bytes": 1496,
+      "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+    },
+    {
+      "path": "third_party/licenses/libxml2/COPYING",
+      "bytes": 1314,
+      "sha256": "5d4873884a890122a4b9b20ad56ac6f7da1d796a5bfcf04a427970ac96217626"
+    },
+    {
+      "path": "third_party/licenses/libyuv/LICENSE",
+      "bytes": 1506,
+      "sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f"
+    },
+    {
+      "path": "third_party/licenses/llvm-libs/LICENSE",
+      "bytes": 15141,
+      "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee"
+    },
+    {
+      "path": "third_party/licenses/mesa/Apache-2.0",
+      "bytes": 10045,
+      "sha256": "7e4d3fba250d15e9e0afa380d4b611828fa2560cc8fdebe95bcf2f01a487de12"
+    },
+    {
+      "path": "third_party/licenses/mesa/BSL-1.0",
+      "bytes": 1649,
+      "sha256": "9b9fea7520a816107fcac2598b7c0155222f16bc430e989706b22f4367f1df7d"
+    },
+    {
+      "path": "third_party/licenses/mesa/exceptions/Linux-Syscall-Note",
+      "bytes": 1257,
+      "sha256": "9b4084655174654608fd037e9ddb4feeadfada01cd042e9c17b05aa7105b2b9f"
+    },
+    {
+      "path": "third_party/licenses/mesa/GPL-1.0-or-later",
+      "bytes": 13047,
+      "sha256": "8ff76f1528e6e4e9400c0f6b1f2d19d4979aaac3bcc44bb707a55389132825c4"
+    },
+    {
+      "path": "third_party/licenses/mesa/GPL-2.0-only",
+      "bytes": 18424,
+      "sha256": "6667ad4063569cd53b13500550d93fcd3dc11bcf82c5514296af013a0b720ba5"
+    },
+    {
+      "path": "third_party/licenses/mesa/MIT",
+      "bytes": 1372,
+      "sha256": "323c587d0ccf10e376f8bf9a7f31fb4ca6078105194b42e0b1e0ee2bc9bde71f"
+    },
+    {
+      "path": "third_party/licenses/mesa/SGI-B-2.0",
+      "bytes": 1822,
+      "sha256": "686bf035a1fd22076416fd3b90370ac67771e884bf57f55693d51f8ce7c710a7"
+    },
+    {
+      "path": "third_party/licenses/mpg123/COPYING",
+      "bytes": 40718,
+      "sha256": "c22482728a634a8dfdb4ff72a96d4c1ed64cd8f3e79335c401751ac591609366"
+    },
+    {
+      "path": "third_party/licenses/ninja/COPYING",
+      "bytes": 11358,
+      "sha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea"
+    },
+    {
+      "path": "third_party/licenses/oneTBB/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/licenses/opencv5/ade-LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/opencv5/annoylib-LICENSE",
+      "bytes": 550,
+      "sha256": "95c519bf46158c01af843f7837c6d0616f6b3ed10549902846fbb4a801ec3423"
+    },
+    {
+      "path": "third_party/licenses/opencv5/clapack-lapack_LICENSE",
+      "bytes": 2266,
+      "sha256": "d56bd4441b999b80c88df04faf0d8b3d7d3b2bd781cf91242c4188e8a6d0f8be"
+    },
+    {
+      "path": "third_party/licenses/opencv5/dlpack-LICENSE",
+      "bytes": 11345,
+      "sha256": "3e8f6bc39276a586d60c8c5aaece2ff989262181cf2b3d2a128db58f97a9300c"
+    },
+    {
+      "path": "third_party/licenses/opencv5/flatbuffers-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/opencv5/fonts-Rubik_OFL.txt",
+      "bytes": 4383,
+      "sha256": "521fa3f83e0b1a4dc0163fff2d31445c6d38c103e47a19abc8f49b4f7b1818e4"
+    },
+    {
+      "path": "third_party/licenses/opencv5/mscr-chi_table_LICENSE.txt",
+      "bytes": 1559,
+      "sha256": "676858659f4115246b41f2f44dcfbf17db52c6b1755f1102b78a87062dff0c07"
+    },
+    {
+      "path": "third_party/licenses/opencv5/opencl-headers-LICENSE.txt",
+      "bytes": 1309,
+      "sha256": "cfaceadff07c2c9458283079cd0166872aa2d93d5c480f1f417be321aa7e0f4d"
+    },
+    {
+      "path": "third_party/licenses/opencv5/SoftFloat-COPYING.txt",
+      "bytes": 1732,
+      "sha256": "0c5b08365136da52639d777f1ebfc03988b0169d80655c90c59f1b3fa3e526a2"
+    },
+    {
+      "path": "third_party/licenses/opencv5/vasot-LICENSE.txt",
+      "bytes": 1083,
+      "sha256": "a9c8a68807d39b6810d593008f02e7835a8f8280781e5ce9b544a7fb973bb79e"
+    },
+    {
+      "path": "third_party/licenses/opencv5/xfeatures2d-LICENSE.AKAZE",
+      "bytes": 1551,
+      "sha256": "c5c1534691f93489d9dc545f490480d24c447114b66d737c8ae63765222f3d26"
+    },
+    {
+      "path": "third_party/licenses/opencv5/xfeatures2d-LICENSE.KAZE",
+      "bytes": 1539,
+      "sha256": "7dc579b21290a73fa2da09517a866f0b97cd31f87b174ab7c3984ae63bf1ea84"
+    },
+    {
+      "path": "third_party/licenses/openexr/LICENSE.md",
+      "bytes": 1501,
+      "sha256": "84853c91d4c2e0310741d4773469d98bb93e61029608e0ba0882a3fffdf330bd"
+    },
+    {
+      "path": "third_party/licenses/openjpeg/LICENSE",
+      "bytes": 2112,
+      "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+    },
+    {
+      "path": "third_party/licenses/openjph/LICENSE",
+      "bytes": 1448,
+      "sha256": "5ddf5177863dfc9ab65fa129d587db651241f00e21ed2427b218bea997591f98"
+    },
+    {
+      "path": "third_party/licenses/opus/COPYING",
+      "bytes": 1945,
+      "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551"
+    },
+    {
+      "path": "third_party/licenses/orc/COPYING",
+      "bytes": 3124,
+      "sha256": "4f5dabb1b44bb6fc5cd53820b1f103147ad61b395a57903991325bd1b85d97bf"
+    },
+    {
+      "path": "third_party/licenses/pango/COPYING",
+      "bytes": 25292,
+      "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5"
+    },
+    {
+      "path": "third_party/licenses/pixman/COPYING",
+      "bytes": 2087,
+      "sha256": "fac9270f0987b96ff4533fca3548c633e02083cbba4a0172a3b149b2e4019793"
+    },
+    {
+      "path": "third_party/licenses/rav1e/LICENSE",
+      "bytes": 1332,
+      "sha256": "2dd0a109751e939dec3f80ddcfbc1ba91553f18c574399e85c159632182a2c0a"
+    },
+    {
+      "path": "third_party/licenses/rav1e/PATENTS",
+      "bytes": 5702,
+      "sha256": "7b14a70c194b19dbd0625e7eac839a63200f67484521ce5e8d8244b127e8907a"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/bzip2/LICENSE",
+      "bytes": 1896,
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/expat/COPYING",
+      "bytes": 1144,
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gcc-libs/COPYING.LIB",
+      "bytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gcc-libs/COPYING.RUNTIME",
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gcc-libs/COPYING3",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gcc-libs/README",
+      "bytes": 236,
+      "sha256": "33400d067fa3e2bd670a0868dcdb60c9486e8f559b675cf9ff1ff55d4e0d06ab"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gettext-runtime/COPYING",
+      "bytes": 495,
+      "sha256": "7ef2cdfe58e0c0460657b6598b49af29d4e03c1e41cbaf0e1da1eb8ad74b95d0"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gettext-runtime/intl/COPYING.LIB",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gettext-runtime/libasprintf/COPYING",
+      "bytes": 65,
+      "sha256": "03133addae5b99a6148c538300e6d97074453089be1423b741bd081f18e2b298"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/gettext-runtime/libasprintf/COPYING.LIB",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/libffi/LICENSE",
+      "bytes": 1132,
+      "sha256": "17b64dc60f3b6897a60f971e288b973f655c2edcdf08b25f3c3dd5549857881c"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/libiconv/COPYING",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/libiconv/COPYING.LIB",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/libiconv/libcharset/COPYING.LIB",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/libiconv/README",
+      "bytes": 5741,
+      "sha256": "4ae66e61d1c6593c84c47105b368d579bcee1af566dbb959ec63a0c48425dcf4"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/libwinpthread/COPYING",
+      "bytes": 2883,
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/openssl/LICENSE",
+      "bytes": 10175,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/pcre2/COPYING",
+      "bytes": 97,
+      "sha256": "99272c55f3dcfa07a8a7e15a5c1a33096e4727de74241d65fa049fccfdd59507"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/pcre2/LICENCE.md",
+      "bytes": 4011,
+      "sha256": "197d8a73ffee0d6b09adba2f9c677b5f5aede24edf89258a68e48248d010d811"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/winpthreads/COPYING",
+      "bytes": 2883,
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/xz/COPYING",
+      "bytes": 3119,
+      "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/xz/COPYING.0BSD",
+      "bytes": 607,
+      "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/xz/COPYING.GPLv2",
+      "bytes": 17984,
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/xz/COPYING.GPLv3",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/xz/COPYING.LGPLv2.1",
+      "bytes": 26419,
+      "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/zlib/LICENSE",
+      "bytes": 1002,
+      "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+    },
+    {
+      "path": "third_party/licenses/reused_mingw_runtime/zstd/LICENSE",
+      "bytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    {
+      "path": "third_party/licenses/rhash/LICENSE",
+      "bytes": 736,
+      "sha256": "953e55838353335148c90b5a38a4894292680b1d4c37228ffddddbf18ce54bf5"
+    },
+    {
+      "path": "third_party/licenses/shaderc/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/licenses/speex/LICENSE",
+      "bytes": 1773,
+      "sha256": "2654a4264b2bfe298dedc508748d140111840c315cc8eb646a3a68c13fa75b01"
+    },
+    {
+      "path": "third_party/licenses/spirv-cross/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/spirv-tools/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third_party/licenses/srt/LICENSE",
+      "bytes": 16726,
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85"
+    },
+    {
+      "path": "third_party/licenses/svt-av1/LICENSE",
+      "bytes": 1709,
+      "sha256": "0acc2fcb27472bdc9aaf8b71f37055bbdac4f54671b7d922f241bd7fcd0dd3e6"
+    },
+    {
+      "path": "third_party/licenses/svt-av1/PATENTS.md",
+      "bytes": 5767,
+      "sha256": "20678ab10402659106dc4c147c97b2a6e94b5c0695415e15a8f195ebc3547922"
+    },
+    {
+      "path": "third_party/licenses/vid.stab/LICENSE",
+      "bytes": 1135,
+      "sha256": "03f095c5c70ea18ffb2b89dd58e4ee57e4f613d04632993f90c890f4cc125b99"
+    },
+    {
+      "path": "third_party/licenses/vulkan-loader/LICENSE",
+      "bytes": 11661,
+      "sha256": "43c0a37e6a0fa7ff3c843b3ec5a4fac84b712558ddac103fbd4c1649662a9ece"
+    },
+    {
+      "path": "third_party/licenses/whisper.cpp/LICENSE",
+      "bytes": 1078,
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "path": "third_party/licenses/zvbi/COPYING.md",
+      "bytes": 78695,
+      "sha256": "6d679539253897582d38fcd1eabfa670c01c0ece73d8cd3dc97869fcf723f106"
+    },
+    {
+      "path": "tools/build.ps1",
+      "bytes": 708,
+      "sha256": "42ec7aeef13dcf1776d139daa6106fbb93ce8f68d887e49a271168eee274f044"
+    },
+    {
+      "path": "tools/package_project.py",
+      "bytes": 12985,
+      "sha256": "94593c1d13ea8bd560db1dacbe3a33b5a44789ec242be53f6807502753299a74"
+    },
+    {
+      "path": "tools/prepare_dataset.py",
+      "bytes": 5329,
+      "sha256": "a694f03b4d1ac301ff8352d115ff554226fceaafe056cb8f74acbf4a6ff81899"
+    },
+    {
+      "path": "tools/run.ps1",
+      "bytes": 303,
+      "sha256": "1028a3fa8823d42b881101430cd1372d28cc1872683cc825dbbd12bc875d7c2b"
+    },
+    {
+      "path": "tools/setup_dependencies.py",
+      "bytes": 7353,
+      "sha256": "40145dc89e7137a56a28305347d24dba5dc96ff3115296da85cceb2deab2e8a1"
+    }
+  ]
+}
